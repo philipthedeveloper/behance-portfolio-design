@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/f3acda4846.js"></script>
+    <title>Philip Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="background-image"></div>
+      <h1 id="logo">O.Philip</h1>
+      <nav>
+        <ul>
+          <li id="active"><a href=""> Home</a></li>
+          <li><a href=""> About</a></li>
+          <li><a href=""> Portfolio</a></li>
+          <li><a href=""> Price</a></li>
+          <li><a href=""> Contact</a></li>
+          <li><a href=""> Blog</a></li>
+        </ul>
+      </nav>
+      <div class="toggle-nav" onclick="toggle()">
+        <span class="a"></span>
+        <span class="b"></span>
+        <span class="c"></span>
+      </div>
+    </header>
+    <main>
+      <section class="contact-links">
+        <nav>
+          <ul>
+            <li>
+              <a href="#"> <img src="./svg/behance-brands.svg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="#"><img src="./svg/instagram-brands.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./svg/pinterest-brands.svg" alt="" /></a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="short-about">
+        <div class="about-container">
+          <h2>Philip Maxwell</h2>
+          <p>Full Stack Web Developer</p>
+        </div>
+      </section>
+    </main>
+
+    <section class="about">
+      <div class="about-grid">
+        <div class="about-photographer-img-container">
+          <img src="./images/about-photographer.jpg" alt="" />
+        </div>
+        <div class="stacked-images">
+          <img
+            src="./images/colorful-gradient-portrait.jpg"
+            alt="colorful-gradient"
+            class="img-1"
+          />
+          <img
+            src="./images/tree.jpg"
+            alt="photograph-of-a-tree"
+            class="img-2"
+          />
+        </div>
+        <h2 class="about-title">About Me</h2>
+        <div class="about-texts">
+          <p class="about-description">
+            I decided on a career in programming whilst studying engineering at
+            First Technical University in Ibadan. I went on to graduate from
+            Technical University with a BA in Software and Web Developement in
+            2022. I am now a Nigerian based UI/UX, App and Website designer and
+            my commercial work has generated...
+          </p>
+          <span>MORE</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <p>Capture the wonderful moments of your life</p>
+      <a href="#">CONTACT</a>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+        <div class="img-container">
+          <div class="600jpg">
+            <img src="./images/landscape-one-600.jpg" alt="" />
+          </div>
+          <h2>Portfolio</h2>
+          <div class="300jpg">
+            <img src="./images/pimple-girl-portrait-300.jpg" alt="" />
+          </div>
+          <div class="600jpg">
+            <img src="./images/food-for-portfolio-600.jpg" alt="" />
+          </div>
+          <div class="600jpg">
+            <img src="./images/living-room-600.jpg" alt="" />
+          </div>
+          <div class="600jpg">
+            <img src="./images/food-for-blog-600.jpg" alt="" />
+          </div>
+          <div class="600jpg">
+            <img src="./images/landscape-two-600.jpg" alt="" />
+          </div>
+          <div class="300jpg">
+            <img src="./images/pexels-abdullahi-abdulquadri-300.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-circle-container">
+        <span class="portfolio-circle active" onclick="portfolioFunc(0)"></span>
+        <span class="portfolio-circle" onclick="portfolioFunc(1)"></span>
+        <span class="portfolio-circle" onclick="portfolioFunc(2)"></span>
+        <span class="portfolio-circle" onclick="portfolioFunc(3)"></span>
+        <span class="portfolio-circle" onclick="portfolioFunc(4)"></span>
+        <span class="portfolio-circle" onclick="portfolioFunc(5)"></span>
+        <span class="portfolio-circle" onclick="portfolioFunc(6)"></span>
+      </div>
+      <a href="#">SEE ALL</a>
+    </section>
+
+    <section class="feedback-section">
+      <h2>Feedback</h2>
+      <div class="feed-container">
+        <span onclick="prev(-1)">&larr;</span>
+        <div class="feedbacks">
+          <div class="feedbacks-container">
+            <div class="feedback">
+              <div class="feedback-text-container">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti, exercitationem minima quam iusto necessitatibus
+                  illum soluta, at voluptate corrupti aspernatur enim hic
+                  perspiciatis amet quidem id obcaecati nesciunt quod eum.
+                </p>
+                <cite> <span id="cite-icon"></span> John Doe</cite>
+              </div>
+              <div class="feedback-img">
+                <img
+                  src="./images/nartan-buyukyildiz-hr_feH2URs0-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="feedback">
+              <div class="feedback-text-container">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                  amet? Quia nihil temporibus quod accusantium saepe distinctio
+                  esse rerum nulla nemo placeat qui commodi perferendis
+                  voluptate doloremque corrupti, molestiae recusandae.
+                </p>
+                <cite> <span id="cite-icon"></span> Cicilia Dia</cite>
+              </div>
+              <div class="feedback-img">
+                <img
+                  src="./images/pexels-sigit-rizal-hidayat-2179700.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="feedback">
+              <div class="feedback-text-container">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Commodi necessitatibus est maiores delectus tempore nobis
+                  alias, ratione cupiditate omnis nam quisquam natus ex illo et
+                  culpa sequi dignissimos mollitia corporis, odit modi! Natus,
+                  sed totam.
+                </p>
+                <cite> <span id="cite-icon"></span> Nathan Jack</cite>
+              </div>
+              <div class="feedback-img">
+                <img
+                  src="./images/pexels-abdullahi-abdulquadri-9424119.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="feedback">
+              <div class="feedback-text-container">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                  aspernatur nam? Illo non dolorem tenetur ex eligendi voluptas
+                  laboriosam sunt, voluptate labore sequi voluptatem ab
+                  explicabo velit molestiae molestias animi! Illum explicabo eum
+                  ea aliquid!
+                </p>
+                <cite> <span id="cite-icon"></span> Hassan Abdul</cite>
+              </div>
+              <div class="feedback-img">
+                <img src="./images/red-poolover-portrait.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <span onclick="prev(1)">&rarr;</span>
+      </div>
+      <div class="feedback-circle-container">
+        <span class="feedback-circle active" onclick="feedback(0)"></span>
+        <span class="feedback-circle" onclick="feedback(1)"></span>
+        <span class="feedback-circle" onclick="feedback(2)"></span>
+        <span class="feedback-circle" onclick="feedback(3)"></span>
+      </div>
+    </section>
+
+    <section class="blog">
+      <h2>Blog</h2>
+      <div class="blog-container">
+        <div class="blog-card">
+          <img src="./images/food-for-blog-600.jpg" alt="" />
+          <h4>
+            7 must have food photography props to give your images something
+            extra
+          </h4>
+          <footer>
+            <p><i class="fa fa-eye" aria-hidden="true"></i>200</p>
+            <p>March 25, 2022</p>
+          </footer>
+        </div>
+        <div class="blog-card">
+          <img src="./images/landscape-one-600.jpg" alt="" />
+          <h4>
+            9 basic photoshop adjustment that beginners need to understand
+          </h4>
+          <footer>
+            <p><i class="fa fa-eye" aria-hidden="true"></i>238</p>
+            <p>April 14, 2022</p>
+          </footer>
+        </div>
+        <div class="blog-card">
+          <img src="./images/living-room-600.jpg" alt="" />
+          <h4>searching for soul in portrait photography</h4>
+          <footer>
+            <p><i class="fa fa-eye" aria-hidden="true"></i>136</p>
+            <p>May 5, 2022</p>
+          </footer>
+        </div>
+      </div>
+
+      <a href="#">SEE ALL</a>
+    </section>
+
+    <footer>
+      <div class="phone-number">
+        <a href="tel:+2349072060752"> 090-7206-0752</a>
+        <a href="mailto:philipowolabi79@gmail.com?subject=Need Help"
+          >philipowolabi79@gmail.com</a
+        >
+      </div>
+
+      <div class="social-media">
+        <p>Social Media</p>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#"> <img src="./svg/behance-brands.svg" alt="" /> </a>
+              </li>
+              <li>
+                <a href="#"><img src="./svg/instagram-brands.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./svg/pinterest-brands.svg" alt="" /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="stay-in-touch">
+        <p>Stay in touch!</p>
+        <form action="">
+          <input type="text" name="" id="" placeholder="E-mail" />
+          <button type="submit">SEND</button>
+        </form>
+      </div>
+      <p>Copyright&copy;2022 - All right reserved</p>
+    </footer>
+  </body>
+</html>
