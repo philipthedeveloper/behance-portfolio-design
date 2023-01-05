@@ -698,7 +698,7 @@ body > footer p {
 
 @media(min-width: 1100px) {
   section.portfolio .img-container{
-    grip-gap: 0.4rem;
+    grid-gap: 0.4rem;
     overflow: hidden;
   }
 }
